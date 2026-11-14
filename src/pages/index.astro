@@ -1,6 +1,5 @@
 ---
 const canonical = new URL(Astro.url.pathname, Astro.site ?? "https://happy-wakey.github.io");
-const today = new Intl.DateTimeFormat("en", { weekday: "long", month: "long", day: "numeric" }).format(new Date("2026-09-05T12:00:00Z"));
 const signals = [
   { icon: "↗", label: "Useful message", title: "Customer approval blocks launch", detail: "LinkedIn · VIP · reply requested by 09:30", tone: "hot", action: "Open thread" },
   { icon: "✦", label: "This day in history", title: "A three-minute piece of context", detail: "One dated summary, with source provenance", tone: "warm", action: "Read 48 sec" },
@@ -66,8 +65,8 @@ const connectorLabels = ["Email", "Calendar", "WhatsApp", "LinkedIn", "X DMs", "
         <div class="hud-wrap" aria-label="Illustrative Happy Wakey morning briefing">
           <div class="hud">
             <header class="hud-head">
-              <div><span class="sun">●</span><strong>Good morning, Alex.</strong><small>{today}</small></div>
-              <div class="hud-status"><span></span> Briefing live</div>
+              <div><span class="sun">●</span><strong>Good morning, Alex.</strong><small>Illustrative morning · sample data</small></div>
+              <div class="hud-status"><span></span> Demo briefing</div>
             </header>
             <div class="hud-grid">
               <section class="card-stack" aria-label="Morning briefing cards">
